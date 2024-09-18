@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autorização Google Drive</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .auth-container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .auth-container img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .auth-container a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4285F4;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .auth-container a:hover {
+            background-color: #357AE8;
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-container">
+        <img src="https://i.pinimg.com/736x/4e/fb/fb/4efbfb22de1871bc0b74d311de3ff936.jpg" alt="Google Drive Logo">
+        <h2>Autenticação Google Drive</h2>
+        <a href="{{ authUrl }}">Autorizar</a>
+    </div>
+</body>
+</html>
