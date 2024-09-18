@@ -2,9 +2,9 @@ using RestSharp;
 using System;
 public class Client
 {
-    private readonly string _bearerToken = "*B@AGNBGAGBV7896VFG098A";
+    private readonly string _bearerToken = "";
     private readonly string _apiError = "Erro interno com a API.";
-    private readonly RestClientOptions _restOptions = new RestClientOptions("https://melgdrive.kinghost.net/api")
+    private readonly RestClientOptions _restOptions = new RestClientOptions("")
     {
         RemoteCertificateValidationCallback = (sender, certificate, chain, sslPolicyErrors) => true
     };
